@@ -4,12 +4,7 @@ import { IonHeader, IonToolbar, IonPage, IonTitle, IonContent } from '@ionic/rea
 const Tab3Page: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab Three</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent />
+      <h1>Side 3</h1>
     </IonPage>
   );
 };

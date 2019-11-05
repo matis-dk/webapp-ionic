@@ -1,25 +1,12 @@
 import React from 'react';
-import { IonContent, IonHeader, IonItem, IonLabel, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonHeader, IonToolbar, IonPage, IonTitle, IonContent } from '@ionic/react';
 
-const Tab2: React.FC = () => {
+const Tab3Page: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab Two</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent>
-        <IonList>
-          <IonItem routerLink="/tab2/details">
-            <IonLabel>
-              <h2>Go to detail</h2>
-            </IonLabel>
-          </IonItem>
-        </IonList>
-      </IonContent>
+      <h1>Side 2</h1>
     </IonPage>
   );
 };
 
-export default Tab2;
+export default Tab3Page;
