@@ -1,19 +1,23 @@
 import React from 'react';
-import { IonBackButton, IonButtons, IonHeader, IonPage, IonToolbar, IonTitle, IonContent } from '@ionic/react';
+import { IonBackButton, IonButtons, IonHeader, IonRouterOutlet, IonPage, IonToolbar, IonTitle, IonContent, IonItem } from '@ionic/react';
+import { withRouter, Route } from 'react-router-dom'
 
-const Details: React.FC = () => {
+const Details = (props: any) => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
           <IonButtons slot="start">
-            <IonBackButton defaultHref="/tab2" />
+            <IonBackButton />
           </IonButtons>
           <IonTitle>Detail</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <p>Details</p>
+        <h1>Detail page</h1>
+        <IonItem routerLink={`/tab1/randomid`} >
+          Link to Details 
+        </IonItem>
       </IonContent>
     </IonPage>
   );

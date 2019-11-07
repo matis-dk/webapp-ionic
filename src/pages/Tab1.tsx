@@ -1,10 +1,9 @@
 import React from 'react';
-import { IonHeader, IonToolbar, IonPage, IonTitle, IonContent, IonButtons, IonButton, IonIcon } from '@ionic/react';
+import { IonHeader, IonToolbar, IonPage, IonContent, IonButton, IonItem } from '@ionic/react';
 import { Plugins } from '@capacitor/core';
+import { withRouter } from 'react-router-dom'
 const { LocalNotifications } = Plugins;
-
-const Tab3Page: React.FC = () => {
-
+const Tab1Page: React.FC = (props: any) => {
   const handleNotification = () => {
     LocalNotifications.schedule({
       notifications: [
@@ -21,7 +20,6 @@ const Tab3Page: React.FC = () => {
       ]
     });
   }
-
   return (
     <IonPage>
       <IonContent>
@@ -31,9 +29,14 @@ const Tab3Page: React.FC = () => {
           Button for Local Notifications 
         </IonButton>
       </div>
+      <div>
+      <IonItem routerLink="/tab1/fromtab1">
+        Link
+      </IonItem>
+      </div>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab3Page;
+export default withRouter(Tab1Page);

@@ -5,7 +5,7 @@
   "npmClient": "npm",
   "webDir": "build",
   "linuxAndroidStudioPath": "/home/matis/android-studio/bin/studio.sh",
-  "server": {
-    "url": "http://192.168.168.115:8100"
+  "server": {	
+    "url": "http://192.168.168.120:8100"
   }
 }
