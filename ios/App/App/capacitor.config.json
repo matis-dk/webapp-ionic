@@ -1,11 +1,8 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "webapp-ionic-2",
+  "appId": "com.cobra.demo",
+  "appName": "cobra-demo-app",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
-  "linuxAndroidStudioPath": "/home/matis/android-studio/bin/studio.sh",
-  "server": {	
-    "url": "http://192.168.168.120:8100"
-  }
+  "linuxAndroidStudioPath": "/home/matis/android-studio/bin/studio.sh"
 }
